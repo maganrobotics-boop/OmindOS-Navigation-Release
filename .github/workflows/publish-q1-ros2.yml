@@ -1,0 +1,28 @@
+name: Publish verified Q1 ROS2 code release
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-q1-ros2.yml'
+      - 'scripts/publish_q1_ros2.py'
+      - 'config/q1-ros2-release.json'
+      - 'docs/Q1_ROS2_RELEASE.zh-CN.md'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: q1-ros2-preview1-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify pinned source, package code only, and publish immutable release
+        run: python3 scripts/publish_q1_ros2.py

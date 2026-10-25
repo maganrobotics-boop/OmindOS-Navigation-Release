@@ -1,5 +1,9 @@
 # OmindOS Navigation · 导航与四足仿真
 
+## Q1 ROS 2 开发代码
+
+[Q1 ROS 2 仿真代码 0.1.0-preview.1](https://github.com/maganrobotics-boop/OmindOS-Navigation-Release/releases/tag/q1-ros2-v0.1.0-preview.1) 将已有自研 Q1 Dynamics R2 接入原生 ROS 2，提供两个独立工作区、站立/起身/步态服务与实时状态反馈。已在 ROS 2 Jazzy 上验证；代码包需配合所有者本地的私有 Q1 模型使用。[功能、验证与安装范围](docs/Q1_ROS2_RELEASE.zh-CN.md)。
+
 面向**差速轮式、全向轮式和四足**的导航项目。当前推荐安装包提供三维参数工作台与四足动力学仿真；轮式导航预览的独立环境见专业指南。
 
 ![差速、全向、四足三类平台示意](docs/media/platforms.svg)

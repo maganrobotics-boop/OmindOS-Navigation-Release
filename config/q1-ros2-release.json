@@ -1,0 +1,16 @@
+{
+  "source_repository": "Omind-Robotics/OmindOS-Navigation",
+  "source_commit": "7b376401800aeaf69f4b1a14ef50d5a3b9a54f4d",
+  "source_sha256": {
+    "scripts/q1_simulation.py": "d23fd7ee9f23a29bbd524795746760b1c7f4f0ffde1aba932a4bc275da6e1308",
+    "scripts/q1_ros2.py": "95d82addbded80f6b0641d7024ace8aa9677c07ca884bf31892bb77e60b79ff1",
+    "scripts/check_q1_ros2.py": "a2ca538159e48bda27600506195032643003cc446a2528031f64beffa05303ad",
+    "scripts/enter_q1_workspace.sh": "b25de324ef9dbeb297c3ed7f01067e777920f08631bd3fb508e2b05a46b1a14c",
+    "requirements-q1.txt": "29464c878cb7bd0b283ea9770aa4232c9acfc0196441f8cd73fc0771baf45ead",
+    "docs/Q1_ROS2.zh-CN.md": "8e979b159dea51597b625c9da73d80fc2698381dc932054e6e6df41f8cc02176",
+    "docs/licenses/Q1-ROS2-GPL-3.0.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "docs/validation/q1-ros2-20261025.json": "707a543b0dbeaf877ffb8d4cfe11468f3be00ad2f2b6a722dd0bd93a338ed996",
+    "release/q1-ros2/package_release.py": "83ce393bcdac0a3a28613a1c848ab667b1dda9d33107a8ab3ba2d0652927750f",
+    "tests/test_q1_release.py": "8246336bb8483e73cdaeabee41f92e142b2bd36f00c816268e42a45a62fa5f78"
+  }
+}
