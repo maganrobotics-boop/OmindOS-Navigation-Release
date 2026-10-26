@@ -1,16 +1,19 @@
 {
   "source_repository": "Omind-Robotics/OmindOS-Navigation",
-  "source_commit": "7b376401800aeaf69f4b1a14ef50d5a3b9a54f4d",
+  "source_commit": "a9f74112919eba83b082fd7c368914276ceaed4e",
   "source_sha256": {
-    "scripts/q1_simulation.py": "d23fd7ee9f23a29bbd524795746760b1c7f4f0ffde1aba932a4bc275da6e1308",
-    "scripts/q1_ros2.py": "95d82addbded80f6b0641d7024ace8aa9677c07ca884bf31892bb77e60b79ff1",
+    "scripts/q1_simulation.py": "4420d45121b3cc8c16e9f27ecdad95953086ea9e6f5213b5ec7d078f99a1f79e",
+    "scripts/q1_ros2.py": "7d6b2f72bb07fab8669a3b2bed2eab53fc9fc798052266fc75c8ae186a9bac7c",
     "scripts/check_q1_ros2.py": "a2ca538159e48bda27600506195032643003cc446a2528031f64beffa05303ad",
     "scripts/enter_q1_workspace.sh": "b25de324ef9dbeb297c3ed7f01067e777920f08631bd3fb508e2b05a46b1a14c",
     "requirements-q1.txt": "29464c878cb7bd0b283ea9770aa4232c9acfc0196441f8cd73fc0771baf45ead",
-    "docs/Q1_ROS2.zh-CN.md": "8e979b159dea51597b625c9da73d80fc2698381dc932054e6e6df41f8cc02176",
+    "docs/Q1_ROS2.zh-CN.md": "f80c8e1858c612f2f4643e928142bb1b57f736a877213304a507cc10e7498b2b",
     "docs/licenses/Q1-ROS2-GPL-3.0.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
-    "docs/validation/q1-ros2-20261025.json": "707a543b0dbeaf877ffb8d4cfe11468f3be00ad2f2b6a722dd0bd93a338ed996",
-    "release/q1-ros2/package_release.py": "83ce393bcdac0a3a28613a1c848ab667b1dda9d33107a8ab3ba2d0652927750f",
-    "tests/test_q1_release.py": "8246336bb8483e73cdaeabee41f92e142b2bd36f00c816268e42a45a62fa5f78"
+    "docs/validation/q1-ros2-20261026.json": "491e1e099e52f5537dec047d3b4b5aea3f4d01c272d54db5dab43fe55369c34a",
+    "config/q1/simulation_parameters.example.json": "dac3cb8438558a83205ead4ae970b61e949fab483fd767ab008b62f64fd4bd8a",
+    "docs/Q1_SIMULATION_PARAMETERS.zh-CN.md": "1b94748fe3ac1c1b5868a9193fe40dabc4ed08d9bcacaa6de3a6bbd5a56a9287",
+    "release/q1-ros2/package_release.py": "f58cf56490ac16a6a98f4ce497d770978da2d49c5e97c01b5f0021ed12a6326b",
+    "tests/test_q1_release.py": "4913ba39eebfab7e688c288a649c7c3699195d4425af0dba0cb1a8af4d97f450",
+    "tests/test_q1_parameters.py": "43898c3dfced266a3dacbd7dbd9a727ddfe3f25b152bc90b4fbdbf15f3f6a6d6"
   }
 }

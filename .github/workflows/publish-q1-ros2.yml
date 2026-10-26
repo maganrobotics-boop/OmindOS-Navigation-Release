@@ -11,7 +11,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: q1-ros2-preview1-publication
+  group: q1-ros2-preview2-publication
   cancel-in-progress: false
 jobs:
   publish:

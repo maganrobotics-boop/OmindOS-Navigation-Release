@@ -12,7 +12,7 @@ from urllib.request import urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / 'config/q1-ros2-release.json'
-TAG = 'q1-ros2-v0.1.0-preview.1'
+TAG = 'q1-ros2-v0.1.0-preview.2'
 
 
 def gh(*args):
@@ -49,13 +49,13 @@ def prepare():
         target = source / name
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(raw)
-    subprocess.run(['python3', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_q1_release.py', '-v'],
+    subprocess.run(['python3', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_q1_*.py', '-v'],
                    cwd=source, check=True)
     spec = importlib.util.spec_from_file_location('q1_release_builder', source / 'release/q1-ros2/package_release.py')
     builder = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(builder)
     builder.package(source, distribution, sha)
-    shutil.copyfile(source / 'docs/validation/q1-ros2-20261025.json', distribution / 'NATIVE_VALIDATION.json')
+    shutil.copyfile(source / 'docs/validation/q1-ros2-20261026.json', distribution / 'NATIVE_VALIDATION.json')
     shutil.copyfile(ROOT / 'docs/Q1_ROS2_RELEASE.zh-CN.md', distribution / 'RELEASE_NOTES.zh-CN.md')
     files = sorted(p for p in distribution.iterdir() if p.is_file())
     if len(files) != 5:
@@ -71,7 +71,7 @@ def main():
     releases = [r for r in api('releases?per_page=100') if r['tag_name'] == TAG]
     if not releases:
         gh('release', 'create', TAG, '--target', os.environ['GITHUB_SHA'], '--draft', '--prerelease',
-           '--title', 'Q1 ROS 2 simulation code · 0.1.0-preview.1',
+           '--title', 'Q1 ROS 2 simulation code · 0.1.0-preview.2',
            '--notes-file', str(distribution / 'RELEASE_NOTES.zh-CN.md'))
         for _ in range(10):
             releases = [r for r in api('releases?per_page=100') if r['tag_name'] == TAG]
